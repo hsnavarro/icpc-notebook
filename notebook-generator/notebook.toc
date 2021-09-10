@@ -1,0 +1,60 @@
+\contentsline {section}{\numberline {1}Template + vimrc}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Template}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}vimrc}{1}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Graphs}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}DFS}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}BFS}{2}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Zero-One-BFS}{2}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Toposort}{2}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}MST (Kruskal)}{2}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}MST (Prim)}{2}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Shortest Path (Dijkstra)}{3}{subsection.2.7}%
+\contentsline {subsection}{\numberline {2.8}Shortest Path (SPFA)}{3}{subsection.2.8}%
+\contentsline {subsection}{\numberline {2.9}Max Flow}{3}{subsection.2.9}%
+\contentsline {subsection}{\numberline {2.10}Min Cost Max Flow}{3}{subsection.2.10}%
+\contentsline {subsection}{\numberline {2.11}Max Bipartite Cardinality Matching (Kuhn)}{4}{subsection.2.11}%
+\contentsline {subsection}{\numberline {2.12}Lowest Common Ancestor}{4}{subsection.2.12}%
+\contentsline {subsection}{\numberline {2.13}2-SAT}{4}{subsection.2.13}%
+\contentsline {subsection}{\numberline {2.14}Assignment Problem}{5}{subsection.2.14}%
+\contentsline {section}{\numberline {3}Mathematics}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Fast Exponential}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Fast Fourier Transform}{5}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Mobius Function}{6}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Sieve}{6}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Strings}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Aho-Corasick}{6}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Rabin-Karp}{7}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Manacher}{7}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Suffix Automaton}{7}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Knuth-Morris-Pratt}{7}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Z Function}{7}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}String Hashing}{8}{subsection.4.7}%
+\contentsline {section}{\numberline {5}Data Structures}{8}{section.5}%
+\contentsline {subsection}{\numberline {5.1}BIT (Range Update, Point Query)}{8}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Centroid Decomposition}{8}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Min Queue Stack}{8}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Min Queue Deque}{8}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Persistent Segment Tree}{9}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Segment Tree with Lazy}{9}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}Segment Tree}{9}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.8}Treap}{9}{subsection.5.8}%
+\contentsline {subsection}{\numberline {5.9}Union Find Simple}{10}{subsection.5.9}%
+\contentsline {subsection}{\numberline {5.10}Union Find with Rollback}{10}{subsection.5.10}%
+\contentsline {subsection}{\numberline {5.11}Union Find Partial Persistent}{10}{subsection.5.11}%
+\contentsline {section}{\numberline {6}Dynamic Programming}{10}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Convex Hull Trick}{10}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Steiner Tree}{10}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Geometry}{11}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Convex Hull}{11}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Minimum Enclosing Circle}{11}{subsection.7.2}%
+\contentsline {section}{\numberline {8}Miscellaneous}{11}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Merge Sort}{11}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Parallel Binary Search}{11}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Ternary Search}{12}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Ternary Search with Double}{12}{subsection.8.4}%
+\contentsline {section}{\numberline {9}Math Extra}{12}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Combinatorial formulas}{12}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Number theory identities}{12}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Stirling Numbers of the second kind}{12}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Burnside's Lemma}{13}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}Numerical integration}{13}{subsection.9.5}%

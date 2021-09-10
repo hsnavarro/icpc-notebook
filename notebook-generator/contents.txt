@@ -1,0 +1,66 @@
+# Any line followed by a '#' character is ignored
+# Section headings must be in square brackets
+# Subsections within a section should follow the format:
+#   [filename within code directory][tab character \t][subsection title]
+
+[Template + vimrc]
+template.cpp	Template
+vimrc	vimrc
+
+[Graphs]
+graphs/dfs.cpp	DFS
+graphs/bfs.cpp	BFS
+graphs/zero-one-bfs.cpp	Zero-One-BFS
+graphs/kahn.cpp	Toposort
+graphs/kruskal.cpp	MST (Kruskal)
+graphs/prim.cpp	MST (Prim)
+graphs/dijkstra.cpp	Shortest Path (Dijkstra)
+graphs/spfa.cpp	Shortest Path (SPFA)
+graphs/dinic.cpp	Max Flow
+graphs/mcmf.cpp	Min Cost Max Flow
+graphs/kuhn.cpp	Max Bipartite Cardinality Matching (Kuhn)
+graphs/lca.cpp	Lowest Common Ancestor
+graphs/2-sat.cpp	2-SAT
+graphs/hungarian.cpp	Assignment Problem
+
+[Mathematics]
+math/fexp.cpp	Fast Exponential
+math/fft.cpp	Fast Fourier Transform
+math/mobius.cpp	Mobius Function
+math/sieve.cpp	Sieve
+
+[Strings]
+strings/aho.cpp	Aho-Corasick
+strings/rabin-karp.cpp	Rabin-Karp
+strings/manacher.cpp	Manacher
+strings/suffix-automaton.cpp	Suffix Automaton
+strings/kmp.cpp	Knuth-Morris-Pratt
+strings/z-function.cpp	Z Function
+strings/string-hashing.cpp	String Hashing
+
+[Data Structures]
+data-structures/bit-range-update-point-query.cpp	BIT (Range Update, Point Query)
+data-structures/centroid-decomp.cpp	Centroid Decomposition
+data-structures/min-queue.cpp	Min Queue Stack
+data-structures/min-queue-deque.cpp	Min Queue Deque
+data-structures/persistent-segment-tree.cpp	Persistent Segment Tree
+data-structures/segment-tree.cpp	Segment Tree with Lazy
+data-structures/segment-tree-point-update.cpp	Segment Tree
+data-structures/treap.cpp	Treap
+data-structures/union-find.cpp	Union Find Simple
+data-structures/union-find-rollback.cpp	Union Find with Rollback
+data-structures/union-find-partial-persistent.cpp	Union Find Partial Persistent
+
+[Dynamic Programming]
+dynamic-programming/convex-hull-trick.cpp	Convex Hull Trick
+dynamic-programming/steiner-tree.cpp	Steiner Tree
+
+[Geometry]
+geometry/convex-hull-graham-scan.cpp	Convex Hull
+geometry/welzl.cpp	Minimum Enclosing Circle
+
+[Miscellaneous]
+misc/merge-sort.cpp	Merge Sort
+misc/pbs.cpp	Parallel Binary Search
+misc/ternary-search.cpp	Ternary Search
+misc/ternary-search-double.cpp	Ternary Search with Double

@@ -1,0 +1,60 @@
+\BOOKMARK [1][-]{section.1}{Template + vimrc}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Template}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{vimrc}{section.1}% 3
+\BOOKMARK [1][-]{section.2}{Graphs}{}% 4
+\BOOKMARK [2][-]{subsection.2.1}{DFS}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.2}{BFS}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.3}{Zero-One-BFS}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.4}{Toposort}{section.2}% 8
+\BOOKMARK [2][-]{subsection.2.5}{MST \(Kruskal\)}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.6}{MST \(Prim\)}{section.2}% 10
+\BOOKMARK [2][-]{subsection.2.7}{Shortest Path \(Dijkstra\)}{section.2}% 11
+\BOOKMARK [2][-]{subsection.2.8}{Shortest Path \(SPFA\)}{section.2}% 12
+\BOOKMARK [2][-]{subsection.2.9}{Max Flow}{section.2}% 13
+\BOOKMARK [2][-]{subsection.2.10}{Min Cost Max Flow}{section.2}% 14
+\BOOKMARK [2][-]{subsection.2.11}{Max Bipartite Cardinality Matching \(Kuhn\)}{section.2}% 15
+\BOOKMARK [2][-]{subsection.2.12}{Lowest Common Ancestor}{section.2}% 16
+\BOOKMARK [2][-]{subsection.2.13}{2-SAT}{section.2}% 17
+\BOOKMARK [2][-]{subsection.2.14}{Assignment Problem}{section.2}% 18
+\BOOKMARK [1][-]{section.3}{Mathematics}{}% 19
+\BOOKMARK [2][-]{subsection.3.1}{Fast Exponential}{section.3}% 20
+\BOOKMARK [2][-]{subsection.3.2}{Fast Fourier Transform}{section.3}% 21
+\BOOKMARK [2][-]{subsection.3.3}{Mobius Function}{section.3}% 22
+\BOOKMARK [2][-]{subsection.3.4}{Sieve}{section.3}% 23
+\BOOKMARK [1][-]{section.4}{Strings}{}% 24
+\BOOKMARK [2][-]{subsection.4.1}{Aho-Corasick}{section.4}% 25
+\BOOKMARK [2][-]{subsection.4.2}{Rabin-Karp}{section.4}% 26
+\BOOKMARK [2][-]{subsection.4.3}{Manacher}{section.4}% 27
+\BOOKMARK [2][-]{subsection.4.4}{Suffix Automaton}{section.4}% 28
+\BOOKMARK [2][-]{subsection.4.5}{Knuth-Morris-Pratt}{section.4}% 29
+\BOOKMARK [2][-]{subsection.4.6}{Z Function}{section.4}% 30
+\BOOKMARK [2][-]{subsection.4.7}{String Hashing}{section.4}% 31
+\BOOKMARK [1][-]{section.5}{Data Structures}{}% 32
+\BOOKMARK [2][-]{subsection.5.1}{BIT \(Range Update, Point Query\)}{section.5}% 33
+\BOOKMARK [2][-]{subsection.5.2}{Centroid Decomposition}{section.5}% 34
+\BOOKMARK [2][-]{subsection.5.3}{Min Queue Stack}{section.5}% 35
+\BOOKMARK [2][-]{subsection.5.4}{Min Queue Deque}{section.5}% 36
+\BOOKMARK [2][-]{subsection.5.5}{Persistent Segment Tree}{section.5}% 37
+\BOOKMARK [2][-]{subsection.5.6}{Segment Tree with Lazy}{section.5}% 38
+\BOOKMARK [2][-]{subsection.5.7}{Segment Tree}{section.5}% 39
+\BOOKMARK [2][-]{subsection.5.8}{Treap}{section.5}% 40
+\BOOKMARK [2][-]{subsection.5.9}{Union Find Simple}{section.5}% 41
+\BOOKMARK [2][-]{subsection.5.10}{Union Find with Rollback}{section.5}% 42
+\BOOKMARK [2][-]{subsection.5.11}{Union Find Partial Persistent}{section.5}% 43
+\BOOKMARK [1][-]{section.6}{Dynamic Programming}{}% 44
+\BOOKMARK [2][-]{subsection.6.1}{Convex Hull Trick}{section.6}% 45
+\BOOKMARK [2][-]{subsection.6.2}{Steiner Tree}{section.6}% 46
+\BOOKMARK [1][-]{section.7}{Geometry}{}% 47
+\BOOKMARK [2][-]{subsection.7.1}{Convex Hull}{section.7}% 48
+\BOOKMARK [2][-]{subsection.7.2}{Minimum Enclosing Circle}{section.7}% 49
+\BOOKMARK [1][-]{section.8}{Miscellaneous}{}% 50
+\BOOKMARK [2][-]{subsection.8.1}{Merge Sort}{section.8}% 51
+\BOOKMARK [2][-]{subsection.8.2}{Parallel Binary Search}{section.8}% 52
+\BOOKMARK [2][-]{subsection.8.3}{Ternary Search}{section.8}% 53
+\BOOKMARK [2][-]{subsection.8.4}{Ternary Search with Double}{section.8}% 54
+\BOOKMARK [1][-]{section.9}{Math Extra}{}% 55
+\BOOKMARK [2][-]{subsection.9.1}{Combinatorial formulas}{section.9}% 56
+\BOOKMARK [2][-]{subsection.9.2}{Number theory identities}{section.9}% 57
+\BOOKMARK [2][-]{subsection.9.3}{Stirling Numbers of the second kind}{section.9}% 58
+\BOOKMARK [2][-]{subsection.9.4}{Burnside's Lemma}{section.9}% 59
+\BOOKMARK [2][-]{subsection.9.5}{Numerical integration}{section.9}% 60
