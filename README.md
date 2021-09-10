@@ -1,4 +1,4 @@
-# How to use the pdf-generator
+# How to use the PDF generator
 
 ## Setup (Ubuntu-20.04)
 
@@ -40,7 +40,7 @@ python generate_pdf.py
 ```cpp
 // @problem_url: <link to the problem>
 
-# headers, namespaces and other constants used on your code
+# headers, namespaces, other constants used on your code
 
 // @include: <relative path to your code>
 

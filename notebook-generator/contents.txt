@@ -6,6 +6,7 @@
 [Template + vimrc]
 template.cpp	Template
 vimrc	vimrc
+flags	Compilation Flags
 
 [Graphs]
 graphs/dfs.cpp	DFS
