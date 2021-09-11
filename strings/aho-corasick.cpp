@@ -6,10 +6,11 @@
 
 // ids start from 0 by default!
 
-template <int NUM_OF_PATTERNS = 1000, int ALPHA_SIZE = 62>
+template <int ALPHA_SIZE = 62>
 struct Aho {
   struct Node {
     int p, char_p, link = -1, str_idx = -1;
+    bool has_end = false;
     vector<int> nxt;
     Node(int _p = -1, int _char_p = -1) : p(_p), char_p(_char_p), nxt(ALPHA_SIZE, -1) {}
   };
@@ -17,7 +18,7 @@ struct Aho {
   vector<Node> nodes = { Node() };
   vector<int> ord;
   int cnt = 0;
-  int ans;
+  int ans = 0;
   bool build_done = false;
   vector<pair<int, int>> rep;
   // how many times the string had a matching
@@ -44,10 +45,9 @@ struct Aho {
       u = nodes[u].nxt[c];
     }
 
-    assert(id < NUM_OF_PATTERNS);
-
     if (nodes[u].str_idx != -1) rep.push_back({ id, nodes[u].str_idx });
     else nodes[u].str_idx = id;
+    nodes[u].has_end = true;
     cnt++;
   }
 
@@ -69,6 +69,8 @@ struct Aho {
       if (j == -1) nodes[u].link = 0;
       else nodes[u].link = nodes[j].nxt[nodes[u].char_p];
 
+      nodes[u].has_end |=nodes[nodes[u].link].has_end;
+
       for (int i = 0; i < ALPHA_SIZE; i++) {
         if (nodes[u].nxt[i] != -1) q.push(nodes[u].nxt[i]);
         else nodes[u].nxt[i] = nodes[nodes[u].link].nxt[i];
@@ -77,10 +79,11 @@ struct Aho {
   }
 
   void match(string &s) {
+    if (!cnt) return;
     if (!build_done) build();
 
     ans = 0;
-    occur = vector<int>(NUM_OF_PATTERNS, 0);
+    occur = vector<int>(cnt, 0);
 
     int u = 0;
     for (char ch : s) {
