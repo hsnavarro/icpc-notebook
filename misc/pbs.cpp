@@ -2,33 +2,33 @@
 
 struct Query { int i, ans; /*+ query related info*/ };
 vector<Query> req;
-int l_default, r_default, idx = l_default;
 
-void pbs(vector<Query>& qs, int l_pbs = l_default, int r_pbs = r_default){
-    int mid = (l_pbs + r_pbs) / 2;
-    // mid = (L+R+1)/2 if different from simple upper/lower bound
-    if(qs.empty()) return;
+void pbs(vector<Query>& qs, int l /* = min value*/, int r /* = max value*/) {
+  if (qs.empty()) return;
 
-    while(idx < mid) {
-        idx++;
-        //add value to data structure
-    }
-    while(idx > mid) {
-        //remove value to data structure
-        idx--;
-    }
+  if (l == r) {
+    for (auto& q : qs) req[q.i].ans = l;
+    return;
+  }
 
-    if(l_pbs == r_pbs) {
-        for(auto& q : qs) req[q.i].ans = l_pbs;
-        return;
-    }
+  int mid = (l + r) / 2;
+  // mid = (l + r + 1) / 2 if different from simple upper/lower bound
 
-    vector<Query> vl, vr;
-    for (auto& q : qs) {
-        if ( /* cond */ ) vl.push_back(q);
-        else vr.push_back(q);
-    }
+  for (int i = l; i <= mid; i++) {
+    // add value to data structure
+  }
 
-    pbs(vl, l_pbs, mid);
-    pbs(vr, mid + 1, r_pbs);
+  vector<Query> vl, vr;
+  for (auto& q : qs) {
+    if (/* cond */) vl.push_back(q);
+    else vr.push_back(q);
+  }
+
+  pbs(vr, mid + 1, r);
+
+  for (int i = l; i <= mid; i++) {
+    // remove value from data structure
+  }
+
+  pbs(vl, l, mid);
 }
