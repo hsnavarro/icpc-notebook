@@ -26,6 +26,12 @@ void add_or(int a, int b){
   adjt[a].push_back(b^1);
 }
 
+// add clause (a xor b)
+void add_xor(int a, int b) {
+  add(a^1, b);
+  add(a, b^1);
+}
+
 void dfs(int x){
   vis[x] = 1;
   for(auto v : adj[x]) if(!vis[v]) dfs(v);
