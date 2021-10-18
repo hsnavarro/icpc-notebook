@@ -18,8 +18,18 @@ void add(int a, int b) {
   adjt[a^1].push_back(b^1);
 }
 
+// force true
+void force_true(int a) {
+  add(a^1, a);
+}
+
+// force false
+void force_false(int a) {
+  add(a, a^1);
+}
+
 // add clause (a v b)
-void add_or(int a, int b){
+void add_or(int a, int b) {
   adj[a^1].push_back(b);
   adj[b^1].push_back(a);
   adjt[b].push_back(a^1);
