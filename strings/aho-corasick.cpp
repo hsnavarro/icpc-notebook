@@ -69,7 +69,7 @@ struct Aho {
       if (j == -1) nodes[u].link = 0;
       else nodes[u].link = nodes[j].nxt[nodes[u].char_p];
 
-      nodes[u].has_end |=nodes[nodes[u].link].has_end;
+      nodes[u].has_end |= nodes[nodes[u].link].has_end;
 
       for (int i = 0; i < ALPHA_SIZE; i++) {
         if (nodes[u].nxt[i] != -1) q.push(nodes[u].nxt[i]);
