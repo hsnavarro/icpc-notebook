@@ -5,9 +5,10 @@
 template <int ALPHA_SIZE = 62> 
 struct Trie {
   struct Node {
-    vector<int> nxt;
-    int cnt = 0;
-    Node() : nxt(ALPHA_SIZE, -1) {}
+    int cnt = 0, nxt[ALPHA_SIZE];
+    Node() {
+      fill(nxt, nxt + ALPHA_SIZE, -1);
+    }
   };
 
   vector<Node> nodes = { Node() };

@@ -5,9 +5,10 @@
 template<int ALPHA_SIZE = 62>
 struct SuffixTree {
   struct Node {
-    int p, link = -1, l, r, nch = 0;
-    vector<int> nxt;
-    Node(int _l = 0, int _r = -1, int _p = -1) : p(_p), l(_l), r(_r), nxt(ALPHA_SIZE, -1) {}
+    int p, link = -1, l, r, nch = 0, nxt[ALPHA_SIZE];
+    Node(int _l = 0, int _r = -1, int _p = -1) : p(_p), l(_l), r(_r) {
+      fill(nxt, nxt + ALPHA_SIZE, -1);
+    }
 
     int len() { return r - l + 1; }
     int next(char ch) { return nxt[remap(ch)]; }

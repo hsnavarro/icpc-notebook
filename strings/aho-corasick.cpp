@@ -9,10 +9,11 @@
 template <int ALPHA_SIZE = 62>
 struct Aho {
   struct Node {
-    int p, char_p, link = -1, str_idx = -1;
+    int p, char_p, link = -1, str_idx = -1, nxt[ALPHA_SIZE];
     bool has_end = false;
-    vector<int> nxt;
-    Node(int _p = -1, int _char_p = -1) : p(_p), char_p(_char_p), nxt(ALPHA_SIZE, -1) {}
+    Node(int _p = -1, int _char_p = -1) : p(_p), char_p(_char_p) {
+      fill(nxt, nxt + ALPHA_SIZE, -1);
+    }
   };
 
   vector<Node> nodes = { Node() };
