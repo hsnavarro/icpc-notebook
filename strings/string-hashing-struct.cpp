@@ -9,9 +9,7 @@ struct Hash {
   static int sub(int a, int b, int mod) { return a - b < 0 ? a - b + mod : a - b; }
   static int mul(int a, int b, int mod) { return 1ll * a * b % mod; }
 
-  Hash(int x = 0) {
-    fill(hs, hs + N, x);
-  }
+  Hash(int x = 0) { fill(hs, hs + N, x); }
 
   bool operator==(const Hash& b) {
     for (int i = 0; i < N; i++) if (hs[i] != b.hs[i]) return false;
@@ -59,9 +57,9 @@ struct Hash {
   }
 };
 
-template<int N> vector<int> Hash<N>::mods = { (int) 1e9 + 9, (int) 1e9 + 33, (int) 1e9 + 87 }; 
+template <int N> vector<int> Hash<N>::mods = { (int) 1e9 + 9, (int) 1e9 + 33, (int) 1e9 + 87 }; 
 
-template<int N>
+template <int N>
 struct PolyHash {
   vector<Hash<N>> h, p;
 
@@ -79,7 +77,7 @@ struct PolyHash {
 
   Hash<N> fhash(int l, int r) {
     l++, r++;
-    return h[r] - h[l-1] * p[r - l + 1];
+    return h[r] - h[l - 1] * p[r - l + 1];
   }
 
   Hash<N> shash(string& s) {

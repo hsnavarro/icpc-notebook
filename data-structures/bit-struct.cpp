@@ -3,7 +3,7 @@
 // Update - O(log n)
 // Query - O(log n)
 
-template<class T>
+template <class T>
 struct Bit {
   int n;
   vector<T> bit;
