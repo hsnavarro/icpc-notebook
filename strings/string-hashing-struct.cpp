@@ -12,7 +12,10 @@ struct Hash {
   Hash(int x = 0) { fill(hs, hs + N, x); }
 
   bool operator<(const Hash& b) const {
-    for (int i = 0; i < N; i++) if (hs[i] < b.hs[i]) return true;
+    for (int i = 0; i < N; i++) {
+      if (hs[i] < b.hs[i]) return true;
+      if (hs[i] > b.hs[i]) return false;
+    }
     return false;
   }
 
@@ -59,6 +62,33 @@ struct Hash {
 };
 
 template <int N> vector<int> Hash<N>::mods = { (int) 1e9 + 9, (int) 1e9 + 33, (int) 1e9 + 87 }; 
+
+// In case you need to generate the MODs, uncomment this:
+// Obs: you may need this on you template
+// mt19937_64 llrand((int) chrono::steady_clock::now().time_since_epoch().count());
+// In main: gen<>();
+/*
+template <int N> vector<int> Hash<N>::mods;
+
+template<int N = 3>
+void gen() {
+  while (Hash<N>::mods.size() < N) {
+    int mod;
+    bool is_prime;
+    do {
+      mod = (int) 1e8 + (int) (llrand() % (int) 9e8);
+      is_prime = true;
+      for (int i = 2; i * i <= mod; i++) {
+        if (mod % i == 0) {
+          is_prime = false;
+          break;
+        }
+      }
+    } while (!is_prime);
+    Hash<N>::mods.push_back(mod);
+  }
+}
+*/
 
 template <int N = 3>
 struct PolyHash {
