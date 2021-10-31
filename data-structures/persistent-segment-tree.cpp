@@ -46,8 +46,9 @@ int update(int idx, int val, int p, int l = 1, int r = n) {
         lc[u] = lc[p];
         rc[u] = update(idx, val, rc[p], mid + 1, r);
       }
+
+      st[u] = st[lc[u]] + st[rc[u]];
     }
 
-    st[u] = st[lc[u]] + st[rc[u]];
     return u;
 }
