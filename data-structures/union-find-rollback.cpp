@@ -2,7 +2,7 @@
 //Union and find - O(log n)
 
 int par[N], sz[N];
-vector<pii> old_par, old_sz;
+vector<pair<int, int>> old_par, old_sz;
 
 int find(int a){ return par[a] == a ? a : find(par[a]); }
 
@@ -10,16 +10,16 @@ void unite(int a, int b){
     if(find(a) == find(b)) return;
     a = find(a), b = find(b);
     if(sz[a] < sz[b]) swap(a, b);
-    old_par.pb({b, par[b]});
-    old_par.pb({a, sz[a]});
+    old_par.push_back({b, par[b]});
+    old_par.push_back({a, sz[a]});
     sz[a] += sz[b], par[b] = a;
 }
 
 void roolback(){
-    par[old_par.top().st] = old_par.top().nd;
-    sz[old_sz.top().st] = old_sz.top().nd;
-    old_par.pop();
-    old_sz.pop();
+    par[old_par.back().first] = old_par.back().second;
+    sz[old_sz.back().st] = old_sz.back().second;
+    old_par.pop_back();
+    old_sz.pop_back();
 }
 
 //in main
