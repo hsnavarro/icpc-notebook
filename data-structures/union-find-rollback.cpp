@@ -11,7 +11,7 @@ void unite(int a, int b){
     a = find(a), b = find(b);
     if(sz[a] < sz[b]) swap(a, b);
     old_par.push_back({b, par[b]});
-    old_par.push_back({a, sz[a]});
+    old_sz.push_back({a, sz[a]});
     sz[a] += sz[b], par[b] = a;
 }
 
