@@ -103,6 +103,40 @@ struct SuffixArray {
     return ans;
   }
 
+  int compare(int idx, string& s, string& p) {
+    int sz_s = (int)s.size() - idx;
+    int sz_p = (int)p.size();
+    int sz = min(sz_s, sz_p);
+    
+    for (int i = 0; i < sz; i++) {
+      if (s[i + idx] < p[i]) return -1;
+      if (s[i + idx] > p[i]) return 1;
+    }
+    
+    if (sz_s == sz_p) return 0;
+    if (sz_s < sz_p) return -1;
+    return 1;
+  }
+  
+  // O(|p| log |s|)
+  bool match(string& s, string &p) {
+    int l = 0, r = (int)sa.size() - 1, mid;
+    
+    while (l != r) {
+      mid = (l + r) / 2;
+      if (compare(sa[mid], s, p) == -1) l = mid + 1;
+      else r = mid;
+    }
+    
+    if ((int)p.size() > (int)s.size() - sa[l]) return false;
+    
+    for (int i = 0; i < (int)p.size(); i++) {
+      if (s[i + sa[l]] != p[i]) return false;
+    }
+    
+    return true;
+  }
+
   // O(|s|)
   ll diff_substr() {
     int sz = n - 1;
