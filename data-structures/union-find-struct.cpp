@@ -12,7 +12,6 @@ struct UnionFind {
 
   void unite(int a, int b) {
     if ((a = find(a)) == (b = find(b))) return;
-    a = find(a), b = find(b);
     if (sz[a] < sz[b]) swap(a, b);
     par[b] = a;
     sz[a] += sz[b];
