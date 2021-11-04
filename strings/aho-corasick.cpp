@@ -79,7 +79,7 @@ struct Aho {
     }
   }
 
-  void match(string &s) {
+  int match(string &s) {
     if (!cnt) return;
     if (!build_done) build();
 
@@ -103,5 +103,6 @@ struct Aho {
     }
 
     for (pair<int, int> x : rep) occur[x.first] = occur[x.second];
+    return ans;
   }
 };
