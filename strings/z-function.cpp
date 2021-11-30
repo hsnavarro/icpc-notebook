@@ -1,6 +1,6 @@
 // Z-Function - O(n)
 
-vector<int> zf(string s){
+vector<int> zf(string& s){
   vector<int> z(s.size());
   for(int i = 1, l = 0, r = 0, n = (int)s.size(); i < n; i++){
     if(i <= r) z[i] = min(z[i-l], r - i + 1);
