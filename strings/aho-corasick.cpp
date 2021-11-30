@@ -80,7 +80,7 @@ struct Aho {
   }
 
   int match(string &s) {
-    if (!cnt) return;
+    if (!cnt) return 0;
     if (!build_done) build();
 
     ans = 0;
