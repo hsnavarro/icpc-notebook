@@ -47,7 +47,7 @@ struct SuffixAutomaton {
       else {
         int clone = (int)nodes.size();
         nodes.push_back(Node(nodes[p].len + 1, nodes[q].link, 0));
-        copy(nodes[clone].nxt, nodes[clone].nxt + ALPHA_SIZE, nodes[q].nxt);
+        copy(nodes[q].nxt, nodes[q].nxt + ALPHA_SIZE, nodes[clone].nxt);
         for (; p and nodes[p].nxt[c] == q; p = nodes[p].link)
           nodes[p].nxt[c] = clone;
         nodes[q].link = nodes[u].link = clone;
