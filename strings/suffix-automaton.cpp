@@ -11,7 +11,7 @@ struct SuffixAutomaton {
   struct Node {
     int len, link, cnt, nxt[ALPHA_SIZE];
     Node(int _len = 0, int _link = 0, int _cnt = 1) : len(_len), link(_link), cnt(_cnt) {
-      fill(nxt, nxt + ALPHA_SIZE, -1);
+      fill(nxt, nxt + ALPHA_SIZE, 0);
     };
   };
  
@@ -47,7 +47,7 @@ struct SuffixAutomaton {
       else {
         int clone = (int)nodes.size();
         nodes.push_back(Node(nodes[p].len + 1, nodes[q].link, 0));
-        nodes[clone].nxt = nodes[q].nxt;
+        copy(nodes[clone].nxt, nodes[clone].nxt + ALPHA_SIZE, nodes[q].nxt);
         for (; p and nodes[p].nxt[c] == q; p = nodes[p].link)
           nodes[p].nxt[c] = clone;
         nodes[q].link = nodes[u].link = clone;
