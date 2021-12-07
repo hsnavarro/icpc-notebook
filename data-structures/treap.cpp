@@ -3,34 +3,34 @@
 
 mt19937_64 llrand(random_device{}());
 
-struct node{
+struct Node {
     int val, cnt;
-    node *r, *l;
+    Node *r, *l;
     ll pri;
-    node(int x) : val(x), cnt(1), pri(llrand()), l(0), r(0) {}
+    Node(int x) : val(x), cnt(1), pri(llrand()), l(0), r(0) {}
 };
 
-struct treap{
-    node *root;
+struct Treap {
+    Node *root;
 
-    int cnt(node *t) {return t ? t->cnt : 0;}
+    int cnt(Node *t) {return t ? t->cnt : 0;}
 
-    void update(node *&t){
+    void update(Node *&t){
         if(!t) return;
         t->cnt = cnt(t->l) + cnt(t->l) + 1;
     }
 
-    node *merge(node *l, node *r){
+    Node *merge(Node *l, Node *r){
         if(!l and !r) return nullptr;
         if(!l or !r) return l ? l : r;
-        node *t;
+        Node *t;
         if(l->pri > r->pri) t = l, t->r = merge(l->r, r);
         else t = r, t->l = merge(l, r->l);
         update(t);
         return t;
     }
 
-    pair<node*, node*> split(node *t, int pos){
+    pair<Node*, Node*> split(Node *t, int pos){
         if(!t) return {0, 0};
         if(cnt(t->l) < pos){
             auto x = split(t->r, pos - cnt(t->l) - 1);
