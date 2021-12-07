@@ -5,8 +5,9 @@ mt19937_64 llrand(random_device{}());
 
 struct Node {
     int val, cnt;
-    Node *r, *l;
     ll pri;
+    Node* l;
+    Node* r;
     Node(int x) : val(x), cnt(1), pri(llrand()), l(0), r(0) {}
 };
 
