@@ -34,14 +34,14 @@ struct treap{
         if(!t) return {0, 0};
         if(cnt(t->l) < pos){
             auto x = split(t->r, pos - cnt(t->l) - 1);
-            t->r = x.st;
+            t->r = x.first;
             update(t);
-            return {t, x.nd};
+            return {t, x.second};
         }
 
         auto x = split(t->l, pos);
-        t->l = x.nd;
+        t->l = x.second;
         update(t);
-        return {x.st, t};
+        return {x.first, t};
     }
 };
