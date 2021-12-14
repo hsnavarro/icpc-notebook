@@ -19,8 +19,7 @@ int cent(int amt, int u, int p = -1) {
 }
 
 void decomp(int u = 1, int p = -1) {
-  dfs(u);
-  int cen = cent(sz[u], u);
+  int cen = cent(get_sz(u), u);
   forb[cen] = 1;
   if(p != -1) par[cen] = p;
 
