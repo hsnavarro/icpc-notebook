@@ -23,7 +23,7 @@ void decomp(int u = 1, int p = -1) {
   forb[cen] = 1;
   if(p != -1) par[cen] = p;
 
-  for(int v : adj[u]) 
+  for(int v : adj[cen]) 
     if(!forb[v]) decomp(v, cen);
 }
 
