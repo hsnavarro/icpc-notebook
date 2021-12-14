@@ -23,7 +23,7 @@ using ld = long double;
 
 const ll LINF = 0x3f3f3f3f3f3f3f3f;
 const int INF = 0x3f3f3f3f, MOD = 1e9+7;
-const int N = 1e5+5;
+const int N = 2e5+5;
 
 int main() {
   ios_base::sync_with_stdio(0), cin.tie(0);
