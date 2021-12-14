@@ -1,5 +1,5 @@
 // Centroid Decomposition - O(nlog n)
-int n, m, sz[N], forb[N], par[N];
+int n, sz[N], forb[N], par[N];
 vector<int> adj[N];
 
 int get_sz(int u, int p = -1) {
