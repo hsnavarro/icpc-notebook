@@ -7,7 +7,7 @@ template <class T>
 struct Bit {
   vector<T> bit;
 
-  Bit(int _n) : bit(_n + 3) {}
+  Bit(int _n = 0) : bit(_n + 3) {}
 
   void add(int p, T v) {
     for (p += 2; p < (int)bit.size(); p += p & -p) bit[p] += v;
