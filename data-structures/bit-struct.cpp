@@ -14,7 +14,7 @@ struct Bit {
   }
 
   T query(int p) {
-    int r = 0;
+    T r = 0;
     for (p += 2; p; p -= p & -p) r += bit[p];
     return r;
   }
