@@ -7,7 +7,8 @@ vector<int> d1, d2;
 
 void manacher(string &s) {
   int n = (int)s.size();
-  d1.resize(n), d2.resize(n);
+  d1.assign(n, 0);
+  d2.assign(n, 0);
   for(int i = 0, l1 = 0, l2 = 0, r1 = -1, r2 = -1; i < n; i++) {
     if(i <= r1) d1[i] = min(d1[r1+l1-i], r1-i+1);
     if(i <= r2) d2[i] = min(d2[r2+l2-i+1], r2-i+1);
