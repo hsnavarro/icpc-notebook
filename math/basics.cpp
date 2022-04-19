@@ -6,7 +6,7 @@ int cceil(int a, int b) {
   return -c/d;
 }
  
-int chao(int a, int b) {
+int cfloor(int a, int b) {
   ll c = abs(a);
   ll d = abs(b);
   if (a * b > 0) return c/d;
